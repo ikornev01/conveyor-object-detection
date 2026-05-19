@@ -1,34 +1,60 @@
-# detail-detection 
-RUB Jan-Apr 23
+# Conveyor Object Detection System
 
+# Conveyor Object Detection System
 
-The project "detail-detection" cosnists of two parts:
-1.  TensorFlow Lite model, which detects the detail with Pi Camera
-2.  Python webserver, which gets a request to detect a detail and then shows the data of this detail
+University project developed at Ruhr University Bochum.
 
+The project focuses on object and color recognition on conveyor systems using TensorFlow-based image processing on Raspberry Pi devices. Detection results are processed and transferred through a Python-based server environment.
 
-Running the detail detection:
+Developed as part of an internship at the Chair of Digital Engineering.
 
-The instruction for the installation of TensorFlow Lite is in folder "raspberry_pi"
-I also recommend to use "requirements.txt" to avoid the versions' conflict.
+## Technologies
 
+- Python
+- TensorFlow Lite
+- Raspberry Pi
+- Google Colab
 
-Usage of this (my) setting-up:
+---
 
-To start server: 
+## Features
+
+- Object recognition on conveyor systems
+- Color detection of objects
+- Local image processing workflows
+- Python-based server communication
+- Lightweight TensorFlow model execution on Raspberry Pi
+
+---
+
+## Architecture
+
+1. Image capture on Raspberry Pi
+2. TensorFlow model processes image data
+3. Detection results are transferred to the Python server
+4. Server processes and displays recognition results
+
+---
+
+## Project Structure
+
+```text
+raspberry_pi/    # Raspberry Pi detection scripts
+server/          # Python server components
+tflite-models/   # TensorFlow Lite models
 ```
-python detail-detection/server/server.py
-```
-To start detection separately: 
-```
-source tflite/bin/activate
-cd detail-detection/raspberry_pi/
-```
 
-To teach your own model: 
+---
 
-[Google Colab](https://colab.research.google.com/github/khanhlvg/tflite_raspberry_pi/blob/main/object_detection/Train_custom_model_tutorial.ipynb)
+## Purpose
 
-[TensorFlow Raspberry Pi](https://www.youtube.com/watch?v=-ZyFYniGUsw&t=67s)
+The project was created as part of a university internship and research-related work in the field of industrial image processing and automation.
 
-[TensorFlow Lite object detection project](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/raspberry_pi)
+---
+
+## Future Improvements
+
+- Real-time video stream processing
+- Improved object classification accuracy
+- Web-based monitoring interface
+- Extended industrial automation integration
