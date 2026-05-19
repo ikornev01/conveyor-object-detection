@@ -1,7 +1,5 @@
 # Conveyor Object Detection System
 
-# Conveyor Object Detection System
-
 University project developed at Ruhr University Bochum.
 
 The project focuses on object and color recognition on conveyor systems using TensorFlow-based image processing on Raspberry Pi devices. Detection results are processed and transferred through a Python-based server environment.
